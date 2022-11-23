@@ -352,7 +352,7 @@ img {
 
 .team-join-link {
     background-color: var(--primary-text-color);
-    color: var(--primary-text-color);
+    color: var(--accent-color);
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -363,18 +363,13 @@ img {
 }
 
 .team-link-icon {
-    color: var(--primary-text-color);
-    fill: #AFB1B8;
-}
-
-.team-link-icon:hover,
-.team-link-icon:focus {
     fill: currentColor;
 }
 
 .team-join-link:hover,
 .team-join-link:focus {
     background-color: var(--accent-text-color);
+    color: var(--primary-text-color);
 }
 
 /* CLIENT */
@@ -393,29 +388,30 @@ img {
     gap: 30px;
 }
 
-.client-icon {
+.client-link {
     width: 170px;
     height: 92px;
-    color: var(--accent-text-color);
+    color: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .client-logo {
-    color: var(--accent-text-color);
-    fill: #AFB1B8;
+    fill: currentColor;
 }
 
-.client-logo:hover,
-.client-logo:focus {
-    fill: currentColor;
+.client-link:hover,
+.client-link:focus {
+    color: var(--accent-text-color);
+    border: 1px solid currentColor;
 }
 
 .client-icon:hover,
 .client-icon:focus {
-    border: 1px solid currentColor;
+    
 }
 
 /* FILTER  */
@@ -465,8 +461,14 @@ img {
     width: 370px;
 }
 
-.card:hover, 
-.card:focus {
+.card-link {
+    display: block;
+    text-decoration: none;
+    outline: transparent;
+}
+
+.card-link:hover, 
+.card-link:focus {
     box-shadow: 
     0px 1px 1px rgba(0, 0, 0, 0.12), 
     0px 4px 4px rgba(0, 0, 0, 0.06), 
