@@ -159,14 +159,10 @@ img {
 }
 
 .icon-mail {
-    width: 16px;
-    height: 12px;
     fill: #757575;
 }
 
 .icon-phone {
-    width: 10px;
-    height: 16px;
     fill: #757575;
 }
 
@@ -342,10 +338,44 @@ img {
 }
 
 .team-position {
+    margin-bottom: 16px;
+
     color: var(--accent-color);
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-align: center;
+}
+
+.team-social {
+    margin: 0 32px 30px;
+}
+
+.team-social-list {
+    display: flex;
+    gap: 10px;
+}
+
+.team-social-link {
+    background-color: var(--primary-text-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.team-social-icon {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+
+.team-social-icon:hover,
+.team-social-icon:focus {
+    fill: var(--primary-text-color);
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+    background-color: var(--accent-text-color);
 }
 
 /* CLIENT */
@@ -550,8 +580,6 @@ img {
 
 .social-link-icon {
     fill: var(--primary-text-color);
-    width: 20px;
-    height: 20px;
 }
 
 .social-link:hover,
