@@ -363,19 +363,35 @@ img {
 }
 
 .team-social-icon {
-    width: 20px;
-    height: 20px;
-    fill: #AFB1B8;
+    
 }
 
 .team-social-icon:hover,
 .team-social-icon:focus {
-    fill: var(--primary-text-color);
+    
 }
 
-.team-social-link:hover,
-.team-social-link:focus {
+.team-social-link-button {
+    background-color: transparent;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+.team-social-link-button:hover,
+.team-social-link-button:focus {
     background-color: var(--accent-text-color);
+}
+
+.team-social-link-icon {
+    fill: #AFB1B8;
+}
+
+.team-social-link-icon:hover,
+.team-social-link-icon:focus {
+    fill: var(--primary-text-color);
 }
 
 /* CLIENT */
@@ -455,6 +471,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    text-decoration: none;
 }
 
 .card {
@@ -462,7 +479,8 @@ img {
     width: 370px;
 }
 
-.card:hover, .card:focus {
+.card:hover, 
+.card:focus {
     box-shadow: 
     0px 1px 1px rgba(0, 0, 0, 0.12), 
     0px 4px 4px rgba(0, 0, 0, 0.06), 
@@ -502,6 +520,14 @@ img {
     display: flex;
 }
 
+.container-footer-contact {
+    margin-right: 70px;
+}
+
+.container-footer-join {
+   
+}
+
 .footer-logo-color {
     color: var(--accent-text-color);
     font-family: Raleway;
@@ -524,7 +550,6 @@ img {
 
 .footer-data {
     font-style: normal;
-    margin-right: 70px;
 }
 
 .footer-address {
@@ -557,7 +582,7 @@ img {
 }
 
 .footer-join {
-    margin-top: 15px;
+    margin-top: 12px;
     margin-bottom: 20px;
 
     color: var(--primary-text-color);
@@ -567,22 +592,24 @@ img {
 }
 
 .footer-join-list {
-    display: flex;
+    display: inline-flex;
     gap: 10px;
 }
 
-.social-link {
+.social-link-button {
     background-color: rgba(255, 255, 255, 0.1);
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    border: 1px solid transparent;
+    text-align: center;
 }
 
 .social-link-icon {
     fill: var(--primary-text-color);
 }
 
-.social-link:hover,
-.social-link:focus {
+.social-link-button:hover,
+.social-link-button:focus {
     background-color: var(--accent-text-color);
 }
