@@ -409,11 +409,6 @@ img {
     border: 1px solid currentColor;
 }
 
-.client-icon:hover,
-.client-icon:focus {
-    
-}
-
 /* FILTER  */
 
 .filters-button {
